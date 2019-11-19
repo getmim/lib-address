@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'lib-address',
-    '__version' => '0.2.0',
+    '__version' => '0.3.0',
     '__git' => 'git@github.com:getmim/lib-address.git',
     '__license' => 'MIT',
     '__author' => [

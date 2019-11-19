@@ -10,6 +10,25 @@ Jalankan perintah di bawah di folder aplikasi:
 mim app install lib-address
 ```
 
+## Syncer
+
+Module ini menambahkan satu library dengan nama `LibAddress\Library\Syncer` untuk
+menambahkan konten address berdasarkan input user. Panggil method seperti di bawah
+untuk menambah konten address:
+
+```php
+$body = [
+    'country' => [1, 'id'],
+    'state'   => ['Jawa Barat', 'name'],
+    'city'    => ['Kab Bogor', 'name'],
+    'district'=> ['Kec Leuwiliang', 'name'],
+    'village' => ['Leuwiliang', 'name'],
+    'zipcode' => ['16630', 'name']
+];
+
+LibAddress\Library\Syncer::sync($body);
+```
+
 ## Object Filters
 
 Module ini menyediakan object filter sebagai berikut:
