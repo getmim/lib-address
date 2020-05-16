@@ -31,7 +31,7 @@ class Filter
         $models = $models[$type];
 
         $obj_model  = 'LibAddress\\Model\\' . $models[0];
-        $par_model  = 'LibAddress\\Model\\' . $models[1];
+        $par_model  = $models[1] ? 'LibAddress\\Model\\' . $models[1] : NULL;
         $par_field  = $models[2];
 
         $obj_cond   = [];
