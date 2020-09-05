@@ -7,9 +7,8 @@
 
 namespace LibAddress\Library;
 
-class Filter implements \Admin\Iface\ObjectFilter
+class FilterSite implements \SiteObjectFilter\Iface\ObjectFilter
 {
-
     private static $last_error;
 
     static function filter(array $cond): ?array {
