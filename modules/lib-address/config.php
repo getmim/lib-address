@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'lib-address',
-    '__version' => '0.5.0',
+    '__version' => '0.6.0',
     '__git' => 'git@github.com:getmim/lib-address.git',
     '__license' => 'MIT',
     '__author' => [
@@ -52,12 +52,24 @@ return [
     'siteObjectFilter' => [
         'filters' => [
             'handlers' => [
-                'addr-country'  => 'LibAddress\\Library\\FilterSite',
-                'addr-state'    => 'LibAddress\\Library\\FilterSite',
-                'addr-city'     => 'LibAddress\\Library\\FilterSite',
-                'addr-district' => 'LibAddress\\Library\\FilterSite',
-                'addr-village'  => 'LibAddress\\Library\\FilterSite',
-                'addr-zip'      => 'LibAddress\\Library\\FilterSite'
+                'addr-country'  => 'LibAddress\\Library\\Filter',
+                'addr-state'    => 'LibAddress\\Library\\Filter',
+                'addr-city'     => 'LibAddress\\Library\\Filter',
+                'addr-district' => 'LibAddress\\Library\\Filter',
+                'addr-village'  => 'LibAddress\\Library\\Filter',
+                'addr-zip'      => 'LibAddress\\Library\\Filter'
+            ]
+        ]
+    ],
+    'apiObjectFilter' => [
+        'filters' => [
+            'handlers' => [
+                'addr-country'  => 'LibAddress\\Library\\Filter',
+                'addr-state'    => 'LibAddress\\Library\\Filter',
+                'addr-city'     => 'LibAddress\\Library\\Filter',
+                'addr-district' => 'LibAddress\\Library\\Filter',
+                'addr-village'  => 'LibAddress\\Library\\Filter',
+                'addr-zip'      => 'LibAddress\\Library\\Filter'
             ]
         ]
     ],

@@ -7,7 +7,7 @@
 
 namespace LibAddress\Library;
 
-class Filter implements \Admin\Iface\ObjectFilter
+class Filter
 {
 
     private static $last_error;
