@@ -73,7 +73,7 @@ class Filter
         $result = [];
         foreach($objects as $object){
             $result[] = [
-                'id'    => $object->id,
+                'id'    => (int)$object->id,
                 'label' => $object->name,
                 'info'  => $par_field ? ($parents[$object->{$par_field}]) : ''
             ];
