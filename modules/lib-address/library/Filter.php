@@ -49,7 +49,12 @@ class Filter
         if(isset($cond['q']))
             $obj_cond['name'] = ['__like', $cond['q']];
 
-        $objects = $obj_model::get($obj_cond, 15, 1, ['name'=>true]);
+        $rpp = 15;
+        if (isset($cond['rpp'])) {
+            $rpp = (int)$cond['rpp'];
+        }
+
+        $objects = $obj_model::get($obj_cond, $rpp, 1, ['name'=>true]);
         if(!$objects)
             return [];
         
